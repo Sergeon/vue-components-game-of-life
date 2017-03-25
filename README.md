@@ -4,6 +4,8 @@ A game of life html page powered by Vue components.
 
 Made with [the Vue webpack template](https://github.com/vuejs-templates/webpack).
 
+Just check [the github page ](https://sergeon.github.io/vue-components-game-of-life/) with the game. So cool :-D!
+
 ## Disclaimer:
 
 Those kind of things should be made with canvas. This is just a project to explore [Vue](https://vuejs.org).
