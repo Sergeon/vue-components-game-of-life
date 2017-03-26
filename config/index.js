@@ -1,11 +1,15 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 var path = require('path')
 
+var args = require('minimist')(process.argv.slice(2));
+
+var pathAssetsRoot = args['pages'] == true ? 'pages' : 'dist'
+
 module.exports = {
   build: {
     env: require('./prod.env'),
     index: path.resolve(__dirname, '../dist/index.html'),
-    assetsRoot: path.resolve(__dirname, '../dist'),
+    assetsRoot: path.resolve(__dirname, '../' + pathAssetsRoot),
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     productionSourceMap: true,
