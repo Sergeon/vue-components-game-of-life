@@ -3,7 +3,7 @@ var path = require('path')
 
 var args = require('minimist')(process.argv.slice(2));
 
-var pathAssetsRoot = args['pages'] == true ? 'pages' : 'dist'
+var pathAssetsRoot = args['pages'] == true ? 'docs' : 'dist'
 
 module.exports = {
   build: {
